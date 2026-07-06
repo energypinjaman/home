@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energy Money Lenders Sdn Bhd | Licensed Financing Malaysia</title>
+  <meta name="description" content="Energy Money Lenders Sdn Bhd offers transparent financing solutions with 6.96% annual interest rate, clear terms, and simple application process." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#home" aria-label="Energy Money Lenders home">
+        <img src="assets/energy-logo.png" alt="Energy Money Lenders Sdn Bhd logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#calculator">Calculator</a>
+        <a href="#benefits">Why Us</a>
+        <a href="#about">About</a>
+        <a href="#apply" class="nav-cta">Apply Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Energy Money Lenders Sdn Bhd · 882514M / 200901039375</p>
+          <h1>Fast, transparent financing for your personal and business needs.</h1>
+          <p class="lead">Simple approval process, clear repayment schedule, and responsible financing support across Malaysia.</p>
+          <div class="rate-card">
+            <span>Annual Interest Rate</span>
+            <strong>6.96% p.a.</strong>
+            <small>Subject to eligibility, documentation and final agreement.</small>
+          </div>
+          <div class="hero-actions">
+            <a href="#calculator" class="btn primary">Calculate Payment</a>
+            <a href="#apply" class="btn secondary">Check Eligibility</a>
+          </div>
+        </div>
+
+        <section class="calculator-card" id="calculator" aria-label="Loan calculator">
+          <div class="card-header">
+            <p>Loan Calculator</p>
+            <h2>Estimate your monthly payment</h2>
+          </div>
+          <label>
+            Desired Amount
+            <span id="amountLabel">RM 30,000</span>
+            <input type="range" id="amount" min="1000" max="80000" step="1000" value="30000" />
+          </label>
+          <label>
+            Tenure
+            <span id="tenureLabel">5 Years</span>
+            <input type="range" id="tenure" min="1" max="8" step="1" value="5" />
+          </label>
+          <div class="result-box">
+            <span>Estimated Monthly Installment</span>
+            <strong id="monthly">RM 777.83</strong>
+            <small>Calculated using flat annual interest rate of 6.96%.</small>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="quick-apply" id="apply">
+      <div class="container quick-grid">
+        <div>
+          <p class="eyebrow dark">Quick Application</p>
+          <h2>Submit your details for a consultant review.</h2>
+          <p>Our team can review your basic profile and guide you on the next documentation steps.</p>
+        </div>
+        <form class="application-form" onsubmit="return handleSubmit(event)">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <select name="loanType" required>
+            <option value="">Select Financing Type</option>
+            <option>Personal Financing</option>
+            <option>Business Financing</option>
+            <option>Debt Consolidation</option>
+          </select>
+          <button type="submit" class="btn primary full">Request Callback</button>
+          <p class="form-note" id="formNote">No upfront payment. Final approval is subject to document verification.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">Why Choose Energy?</p>
+          <h2>Clear terms. Professional support. Responsible lending.</h2>
+        </div>
+        <div class="benefit-grid">
+          <article>
+            <div class="icon">%</div>
+            <h3>6.96% Annual Rate</h3>
+            <p>Transparent rate display with a simple monthly installment estimate before you proceed.</p>
+          </article>
+          <article>
+            <div class="icon">✓</div>
+            <h3>Clear Documentation</h3>
+            <p>All repayment terms and agreement details are explained before confirmation.</p>
+          </article>
+          <article>
+            <div class="icon">24</div>
+            <h3>Fast Review</h3>
+            <p>Quick profile checking and guidance on documents needed for further assessment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-card">
+          <img src="assets/energy-logo.png" alt="Energy Money Lenders Sdn Bhd" />
+        </div>
+        <div>
+          <p class="eyebrow">About Us</p>
+          <h2>Energy Money Lenders Sdn Bhd</h2>
+          <p>Energy Money Lenders Sdn Bhd provides financing solutions designed for customers who need a straightforward, reliable and transparent borrowing process.</p>
+          <div class="stats">
+            <div><strong>6.96%</strong><span>Annual Rate</span></div>
+            <div><strong>8 Years</strong><span>Tenure Option</span></div>
+            <div><strong>RM 80K</strong><span>Sample Max Amount</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">Customer Experience</p>
+          <h2>Built for clarity from the first conversation.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote>“The consultant explained the repayment clearly and helped me understand the documents before signing.”<span>— Customer, Selangor</span></blockquote>
+          <blockquote>“Fast response and professional service. The monthly payment estimate was easy to understand.”<span>— Customer, Kuala Lumpur</span></blockquote>
+          <blockquote>“No confusing terms. Everything was shown clearly during the application process.”<span>— Customer, Johor</span></blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/energy-logo.png" alt="Energy Money Lenders Sdn Bhd logo" />
+        <p>Energy Money Lenders Sdn Bhd<br />882514M / 200901039375</p>
+      </div>
+      <div>
+        <strong>Disclaimer</strong>
+        <p>Information on this website is for general reference only. Final terms, fees, approval and repayment schedule are subject to eligibility, documentation and signed agreement.</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Energy Money Lenders Sdn Bhd. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
